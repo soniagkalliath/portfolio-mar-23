@@ -1,0 +1,259 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #ffffff;
+}
+
+.navbar{
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    margin-left: 100px;
+    align-items: center;
+}
+
+.logo{
+    width: 130px;
+}
+
+.listitem{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+.links{
+    text-decoration: none;
+    font-weight: bold;
+    color: #000000;
+}
+
+.links:hover{
+    color: #ff0000;
+}
+
+.title{
+    margin-left: 8%;
+    margin-top: 13%;
+}
+
+.title_h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+#lastname{
+    color: #ffa500;
+    font-size: 50px;
+}
+
+.download{
+    background-color: #000000;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    display: inline-block;
+    margin: 30px 0px;
+    border-radius: 5px;
+}
+
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0px;
+    right: 30px;
+}
+
+.imgGroup{
+    position: absolute;
+    height: 100%;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%);
+    transition: bottom 1s, left 2s;
+}
+.images:hover #shape{
+    bottom: 70px;
+}
+
+.images:hover #girl{
+   left:40%;
+}
+
+#about{
+    margin: 13% 8% 0px 8%;
+}
+
+.heading{
+    text-align: center;
+}
+
+.heading h2{
+    font-size: 30px;
+}
+
+.heading span{
+    font-size: 20px;
+    color: #008000;
+}
+
+.about_content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.about-img img{
+    width: 80%;
+    border-radius: 1rem;
+}
+
+.about-details{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: justify;
+}
+.informations{
+    margin: 1rem 0 0 0;
+}
+
+.info-box{
+    display: flex;
+    align-items: center;
+    margin: 0 0 1rem 0;
+}
+
+.info-box span{
+    margin-left: 1rem;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#skill{
+    margin: 8% 8% 0px 8%;
+}
+
+.skill_container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.skill-img img{
+    width: 90%;
+    object-position: center;
+    padding-left: 4rem;
+}
+
+.bar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0px;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.bar-container h3,span{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.base-bar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: #000000;
+    border-radius: .5rem;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.html-bar{
+    background-color: #ffa500;
+    width: 95%;
+}
+.css-bar{
+    background-color: #ffa500;
+    width: 88%;
+}
+.js-bar{
+    background-color: #ffa500;
+    width: 89%;
+}
+.react-bar{
+    background-color: #ffa500;
+    width: 85%;
+}
+
+.icon-set{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.icon,.up-arrow{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    margin:0px 10px;
+}
+
+.icon i{
+    font-size: 30px;
+    color: #000000;
+}
+
+.icon:hover {
+    background-image: linear-gradient(to bottom right,yellow,orange,rgb(255, 102, 0));
+}
+
+.icon:hover i{
+    color: white;
+    animation: shake 0.75s;
+}
+
+@keyframes shake{
+    10%{
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(-15deg);
+    }
+    30%{
+        transform: rotate(15deg);  
+    }
+    40%{
+        transform: rotate(-15deg);
+    }
+}
+
+footer{
+    margin: 3rem 0px;
+}
+
+.up-arrow{
+    float: right;
+    background-image: linear-gradient(to bottom right,yellow,orange,rgb(255, 102, 0));
+    margin: 0px 10px 50px 0px;
+}
+
+.up-arrow:hover i{
+    color: white;
+}
